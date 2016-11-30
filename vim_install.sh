@@ -1,5 +1,5 @@
 mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -o ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cd ~/.vim/bundle
 git clone https://github.com/Shougo/neocomplcache.git
 git clone https://github.com/Shougo/unite.vim.git
