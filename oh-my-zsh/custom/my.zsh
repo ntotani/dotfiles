@@ -1,6 +1,6 @@
 export LANG=ja_JP.UTF-8
 
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.rvm/bin:$PATH
 export NODE_PATH=/usr/local/lib/node_modules:/usr/local/lib/node:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -18,7 +18,7 @@ export ANT_ROOT=/usr/local/opt/ant/bin
 #nvm use 0.11.14
 #if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 #export PYENV_ROOT=/usr/local/opt/pyenv
-#source /Users/ntotani/.rvm/scripts/rvm
+source /Users/ntotani/.rvm/scripts/rvm
 
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
