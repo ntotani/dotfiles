@@ -5,14 +5,13 @@ export NODE_PATH=/usr/local/lib/node_modules:/usr/local/lib/node:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export VISUAL=/Applications/MacVim.app/Contents/MacOS/Vim
-#export ANDROID_HOME=/usr/local/opt/android-sdk
-#export ANDROID_SDK_ROOT=$ANDROID_HOME
-#export NDK_ROOT=/usr/local/opt/android-ndk
-#export ANDROID_NDK_ROOT=$NDK_ROOT
-export ANT_ROOT=/usr/local/opt/ant/bin
-#export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export NDK_ROOT=~/Library/Android/sdk/ndk-bundle
+export ANDROID_NDK_ROOT=$NDK_ROOT
+#export ANT_ROOT=/usr/local/opt/ant/bin
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
 #export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
-#launchctl setenv STUDIO_JDK /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk
 
 #source $(brew --prefix nvm)/nvm.sh
 #nvm use 0.11.14
