@@ -13,8 +13,8 @@ export ANDROID_NDK_ROOT=$NDK_ROOT
 export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
 #export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
-#source $(brew --prefix nvm)/nvm.sh
-#nvm use 0.11.14
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 #export PYENV_ROOT=/usr/local/opt/pyenv
 source /Users/ntotani/.rvm/scripts/rvm
