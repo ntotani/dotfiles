@@ -50,3 +50,8 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ntotani/Documents/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ntotani/Documents/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ntotani/Documents/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ntotani/Documents/google-cloud-sdk/completion.zsh.inc'; fi
