@@ -1,5 +1,7 @@
 export LANG=ja_JP.UTF-8
 
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
 export PATH=~/bin:~/.rvm/bin:~/Library/Android/sdk/platform-tools:/usr/local/bin:$PATH
 export NODE_PATH=/usr/local/lib/node_modules:/usr/local/lib/node:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
