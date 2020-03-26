@@ -16,7 +16,9 @@ export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Hom
 #export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 #export PYENV_ROOT=/usr/local/opt/pyenv
 source /Users/ntotani/.rvm/scripts/rvm
