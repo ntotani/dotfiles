@@ -2,7 +2,8 @@ export LANG=ja_JP.UTF-8
 
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export PATH=~/bin:~/.rvm/bin:~/Library/Android/sdk/platform-tools:/usr/local/bin:$PATH
+export PYENV_ROOT=/usr/local/opt/pyenv
+export PATH=~/bin:$PYENV_ROOT/bin:~/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/local/sbin:$PATH
 export NODE_PATH=/usr/local/lib/node_modules:/usr/local/lib/node:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -19,9 +20,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-#export PYENV_ROOT=/usr/local/opt/pyenv
-source /Users/ntotani/.rvm/scripts/rvm
+if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 #export COCOS_CONSOLE_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin
@@ -71,3 +70,5 @@ if [ -f '/Users/ntotani/Documents/google-cloud-sdk/path.zsh.inc' ]; then source 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ntotani/Documents/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ntotani/Documents/google-cloud-sdk/completion.zsh.inc'; fi
+
+export CLOUDSDK_PYTHON=/usr/local/opt/pyenv/shims/python
