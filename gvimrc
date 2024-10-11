@@ -9,6 +9,6 @@ if has('gui_macvim')
   set columns=160      " 横幅
   set lines=50         " 行数
   " フォント設定
-  set guifontwide=Osaka:h18
-  set guifont=Osaka-Mono:h18
+  set guifontwide=Ricty\ Diminished\ Regular:h18
+  set guifont=Ricty\ Diminished\ Regular:h18
 endif
